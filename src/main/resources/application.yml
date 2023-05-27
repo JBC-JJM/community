@@ -1,0 +1,37 @@
+server:
+  port: 8080  #端口号
+  servlet:
+    context-path: /community  #根url
+
+spring:
+  # ThymeleafProperties模板
+  thymeleaf:
+    cache: false #关闭缓存，不然看不见实时的页面
+    mode: HTML #非严格的html,需要导包
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+  #数据库连接,这里其实比较任意出错
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/community?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: 123456
+    #光！：连接池
+    type: com.zaxxer.hikari.HikariDataSource  #数据源的类型，这其实是连接池创建的了
+    hikari:
+      maximum-pool-size: 15 #连接对象上限# 最大连接数 默认10
+      minimum-idle: 5 # 最小空闲连接数量
+      idle-timeout: 30000 # 空闲连接存活最大时间 默认600000ms30000毫秒
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描xml文件，由于xml和dao的接口文件不在同一报下
+  type-aliases-package: com.nowcoder.community.entity #扫描实体类，简化包名
+  configuration:
+    useGeneratedKeys: true  #自动生成主键，大概是返回主键回填
+    mapUnderscoreToCamelCase: true #返回值的映射，可以自动my_name转化为myName（底层就是mapResult）
+
+#控制台输出日志的级别，可以看到sql语句（不过是更大的范围）
+#logging:
+#  level.com.nowcoder.community: debug
