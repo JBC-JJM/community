@@ -3,6 +3,11 @@ server:
   servlet:
     context-path: /community  #根url
 
+#域名
+community:
+  path:
+    domain: http://localhost:8080
+
 spring:
   # ThymeleafProperties模板
   thymeleaf:
@@ -23,6 +28,18 @@ spring:
       maximum-pool-size: 15 #连接对象上限# 最大连接数 默认10
       minimum-idle: 5 # 最小空闲连接数量
       idle-timeout: 30000 # 空闲连接存活最大时间 默认600000ms30000毫秒
+  #mail的配置
+  mail:
+    #域名端口
+    host: smtp.163.com
+    port: 465
+    #账号
+    username: jumpupchen@163.com
+    #网易授权码
+    password: GMPQHBEGANHCHBNF
+    protocol: smtps	#加密协议
+    properties:
+      mail.smtp.ssl.enable: true	#ssl安全连接
 
 #mybatis配置
 mybatis:

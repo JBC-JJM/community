@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class HomeController {
     private UserService userService;
 
     @GetMapping("/index")
-    public String getIndexPage(Model model,Page page) {
+    public String getIndexPage(Page page, Model model) {
 
         //总数量
         int rows = postService.discussPostsRows(0);
@@ -34,15 +35,15 @@ public class HomeController {
         page.setPath("/index");
 
         //帖子列表+用户数据
-        List<Map<String,Object>> discussPosts = new ArrayList();
+        List<Map<String, Object>> discussPosts = new ArrayList();
         //帖子列表
-        List<DiscussPost> postList = postService.discussPosts(0, page.getOffset(),page.getLimit());
+        List<DiscussPost> postList = postService.discussPosts(0, page.getOffset(), page.getLimit());
         for (DiscussPost post : postList) {
             Integer userId = post.getUserId();  //根据userid找发表帖子的用户
             //用户数据
             User user = userService.selectById(userId);
 
-            Map<String,Object> map = new HashMap();
+            Map<String, Object> map = new HashMap();
             map.put("post", post);
             map.put("user", user);
 
@@ -51,7 +52,7 @@ public class HomeController {
 
 //在开发模板时：假如模板有错误，那么报错很难找到
         model.addAttribute("discussPosts", discussPosts);
-        model.addAttribute("page",page);
+        model.addAttribute("page", page);
         return "/index";
     }
 }
