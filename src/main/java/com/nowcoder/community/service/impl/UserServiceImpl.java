@@ -1,7 +1,10 @@
 package com.nowcoder.community.service.impl;
 
+import com.nowcoder.community.dao.LoginTicketMapper;
 import com.nowcoder.community.dao.UserMapper;
+import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.entity.User;
+import com.nowcoder.community.entity.UserForm;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.MailClient;
@@ -152,4 +155,61 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
+
+    /**
+     * 其中时长是时间戳，以秒为单位
+     * @param userForm 将前端传来的数据封装一下：名称+密码+时长+记住我
+     * @return
+     */
+    @Override
+    public Map<String, Object> login(UserForm userForm) {
+        Map<String, Object> map = new HashMap<>();
+        //判空
+        //一般引用对象使用null ， 这也是为什么使用Integer不使用int的原因，可以偷懒
+        //String判空 StringUtils.isBlank 或 ==null/“ ”
+        //String判相等  "abc".equals()
+        if (StringUtils.isBlank(userForm.getUsername())) {
+            map.put("usernameMsg", "用户名不可为空");
+            return map;
+        }
+        if (StringUtils.isBlank(userForm.getPassword())) {
+            map.put("passwordMsg", "密码不能为空!");
+            return map;
+        }
+
+        //验证 存在\激活？
+        User user = userMapper.selectByName(userForm.getUsername());
+        if (user == null || user.getStatus() == 0) {
+            map.put("usernameMsg", "账号不存在或者没激活");
+            return map;
+        }
+        String password=CommunityUtil.MD5(userForm.getPassword()+user.getSalt());
+        if (!user.getPassword().equals(password)) {
+            map.put("passwordMsg", "密码错误!");
+            return map;
+        }
+
+        //干活：生成登入凭证并insert
+        //凭证
+        String ticket = CommunityUtil.generateUUID();
+        //有效时长，注意时间戳以毫秒为单位
+        Date date = new Date(System.currentTimeMillis() + userForm.getExpiredSecond()*1000);
+        //封装为实体搞到dao
+        LoginTicket loginTicket = new LoginTicket(user.getId(), ticket, 0, date);
+        loginTicketMapper.insertLoginTicket(loginTicket);
+        map.put("ticket",ticket);
+        return map;
+    }
+
+    @Override
+    public void logout(String ticket) {
+        loginTicketMapper.updateStatusTicket(ticket,1);
+    }
+
+    @Override
+    public LoginTicket findLoginTicket(String ticket) {
+        return loginTicketMapper.selectByTicket(ticket);
+    }
 }
