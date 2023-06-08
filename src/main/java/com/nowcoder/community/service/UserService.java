@@ -17,9 +17,16 @@ public interface UserService {
 
     boolean updateStatus(int id, int status);
 
-    boolean updateHeader(int id, String headerUrl);
+//    boolean updateHeader(int id, String headerUrl);
 
-    boolean updatePassword(int id, String password);
+    /**
+     * 更新密码，密码都是没加密的就行
+     * @param id
+     * @param password
+     * @param oldPassword
+     * @return
+     */
+    boolean updatePassword(int id, String password,String oldPassword);
 
     Map<String,Object> register(User user);
 
@@ -39,4 +46,12 @@ public interface UserService {
     void logout(String ticket);
 
     LoginTicket findLoginTicket(String ticket);
+
+    /**
+     *
+     * @param id
+     * @param headerUrl ：web地址 = 域名（端口）+项目目录+user/header+文件名
+     * @return
+     */
+    boolean updateHeader(int id,String headerUrl);
 }

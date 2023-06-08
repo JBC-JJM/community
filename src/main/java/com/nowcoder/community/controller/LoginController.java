@@ -37,7 +37,7 @@ public class LoginController implements CommunityConstant {
     @Autowired
     private DefaultKaptcha kaptcha;
 
-    @Value("server.servlet.context-path")
+    @Value("${server.servlet.context-path}")
     private String contextPath;
 
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
@@ -45,7 +45,7 @@ public class LoginController implements CommunityConstant {
     @GetMapping("/login")
     public String getLoginPage(Model model) {
         UserForm userForm = new UserForm();
-        model.addAttribute("userForm",userForm);
+        model.addAttribute("userForm", userForm);
         return "site/login";
     }
 
@@ -102,12 +102,12 @@ public class LoginController implements CommunityConstant {
         }
         model.addAttribute("usernameMsg", map.get("usernameMsg"));
         model.addAttribute("passwordMsg", map.get("passwordMsg"));
-        model.addAttribute("userForm",userForm);
+        model.addAttribute("userForm", userForm);
         return "/site/login";
     }
 
     @GetMapping("logout")
-    public String logout(@CookieValue("ticket") String ticket){
+    public String logout(@CookieValue("ticket") String ticket) {
         userService.logout(ticket);
         return "redirect:/login";
     }

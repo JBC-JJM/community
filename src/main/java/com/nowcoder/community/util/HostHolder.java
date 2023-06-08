@@ -3,6 +3,9 @@ package com.nowcoder.community.util;
 import com.nowcoder.community.entity.User;
 import org.springframework.stereotype.Component;
 
+/**
+ * user：线程安全
+ */
 @Component
 public class HostHolder {
 

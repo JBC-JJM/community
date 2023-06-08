@@ -57,8 +57,8 @@ public class MapperTests {
         rows = userService.updateHeader(150, "http://www.nowcoder.com/102.png");
         System.out.println(rows);
 
-        rows = userService.updatePassword(150, "hello");
-        System.out.println(rows);
+//        rows = userService.updatePassword(150, "hello");
+//        System.out.println(rows);
     }
 
 
@@ -95,19 +95,5 @@ public class MapperTests {
         LoginTicket loginTicket = loginTicketMapper.selectByTicket(tit);
         System.out.println(loginTicket);
         loginTicketMapper.updateStatusTicket(tit,0);
-    }
-
-    @Test
-    public void testDate() {
-//        参考: https://blog.csdn.net/weixin_45948234/article/details/112178525
-        long timeMillis = System.currentTimeMillis();
-        timeMillis+=3600*1000;  //以毫秒计算
-        System.out.println("没有格式化的时间戳" + timeMillis);
-
-        Date date = new Date(timeMillis);
-        System.out.println("强转的时间戳"+date);
-
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");
-        System.out.println("格式化的时间戳" + formatter.format(timeMillis));
     }
 }

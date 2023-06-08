@@ -1,4 +1,0 @@
-my.ini ：mysql的初始化配置
-schema.sql : 造表
-data ：插入数据
-innodb.sql ：后面再说

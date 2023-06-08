@@ -149,11 +149,6 @@ public class UserServiceImpl implements UserService {
         return userMapper.updateHeader(id, headerUrl) > 0;
     }
 
-    @Override
-    public boolean updatePassword(int id, String password) {
-        return userMapper.updatePassword(id, password) > 0;
-    }
-
 
     @Autowired
     private LoginTicketMapper loginTicketMapper;
@@ -212,4 +207,22 @@ public class UserServiceImpl implements UserService {
     public LoginTicket findLoginTicket(String ticket) {
         return loginTicketMapper.selectByTicket(ticket);
     }
+
+    @Override
+    public boolean updatePassword(int id, String password,String oldPassword) {
+        //校验旧密码
+        User user = userMapper.selectById(id);
+        oldPassword=CommunityUtil.MD5(oldPassword+user.getSalt());
+        if (!user.getPassword().equals(oldPassword)) {
+            return false;
+        }
+
+        //插入新密码
+        String salt = user.getSalt();
+        password = CommunityUtil.MD5(password + salt);
+        int count = userMapper.updatePassword(id,password);
+
+        return count > 0;
+    }
+
 }
