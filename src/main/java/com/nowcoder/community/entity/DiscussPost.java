@@ -16,6 +16,27 @@ public class DiscussPost {
     private Integer commentCount;
     private Double score;
 
+    public DiscussPost() {
+    }
+
+    public DiscussPost(Integer userId, String title, String content, Date createTime) {
+        this.userId = userId;
+        this.title = title;
+        this.content = content;
+        this.createTime = createTime;
+    }
+
+    public DiscussPost(Integer userId, String title, String content, Integer type, Integer status, Date createTime, Integer commentCount, Double score) {
+        this.userId = userId;
+        this.title = title;
+        this.content = content;
+        this.type = type;
+        this.status = status;
+        this.createTime = createTime;
+        this.commentCount = commentCount;
+        this.score = score;
+    }
+
     @Override
     public String toString() {
         return "DiscussPost{" +

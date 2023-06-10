@@ -16,4 +16,8 @@ public interface DiscussPostMapper {
     List<DiscussPost> selectDiscussPosts(@Param("userId") Integer userId, @Param("offset") Integer offset, @Param("limit") Integer limit);
 //    查询总的数量，userId默认为空，支持查询某个用户的帖子的
     int selectDiscussPostsRows(@Param("userId") Integer userId);
+
+    int insert (DiscussPost discussPost);
+
+    DiscussPost selectDiscussPostById(Integer id);
 }

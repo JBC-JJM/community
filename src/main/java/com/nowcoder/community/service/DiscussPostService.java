@@ -12,4 +12,9 @@ public interface DiscussPostService {
     List<DiscussPost> discussPosts(Integer userId, int offset, int limit);
     //    查询总的数量，userId默认为0，支持查询某个用户的帖子的
     int discussPostsRows(Integer userId);
+
+    //插入评论，由过滤xml和敏感词的功能
+    int insertPost(DiscussPost discussPost);
+
+    DiscussPost findPostById(Integer id);
 }

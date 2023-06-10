@@ -1,0 +1,746 @@
+2023-06-10 10:49:44,920 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 12660 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 10:49:44,935 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 10:49:44,982 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 10:49:44,982 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 10:49:46,295 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 10:49:46,310 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 10:49:46,310 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 10:49:46,310 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 10:49:46,326 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 10:49:46,326 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 10:49:46,326 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 10:49:46,342 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 10:49:46,467 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 10:49:46,467 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1485 ms
+2023-06-10 10:49:46,904 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-10 10:49:46,920 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 10:51:25,139 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 3176 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 10:51:25,139 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 10:51:25,201 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 10:51:25,201 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 10:51:26,171 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 10:51:26,171 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 10:51:26,187 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 10:51:26,296 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 10:51:26,296 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1095 ms
+2023-06-10 10:51:26,610 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-10 10:51:26,625 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 10:52:42,830 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 2104 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 10:52:42,830 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 10:52:42,861 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 10:52:42,861 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 10:52:43,864 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 10:52:43,880 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 10:52:43,880 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 10:52:43,880 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 10:52:43,896 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 10:52:43,896 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 10:52:43,896 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 10:52:43,896 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 10:52:43,989 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 10:52:43,989 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1128 ms
+2023-06-10 10:52:44,319 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-10 10:52:44,334 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 10:59:11,471 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 1976 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 10:59:11,471 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 10:59:11,518 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 10:59:11,518 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 10:59:12,498 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 10:59:12,513 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 10:59:12,529 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 10:59:12,638 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 10:59:12,638 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1120 ms
+2023-06-10 10:59:13,060 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 10:59:13,154 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 10:59:13,263 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 10:59:13,279 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 10:59:13,310 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 10:59:13,310 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.198 seconds (JVM running for 3.313)
+2023-06-10 10:59:28,764 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10704 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 10:59:28,764 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 10:59:30,750 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 10:59:30,937 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 10:59:31,203 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.814 seconds (JVM running for 3.765)
+2023-06-10 10:59:31,484 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:00:24,338 INFO [Thread-10] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:00:24,959 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10864 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:00:24,959 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:00:25,099 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 1976 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:00:25,099 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:00:25,569 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:00:25,585 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:00:25,616 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:00:25,616 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 501 ms
+2023-06-10 11:00:25,710 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-10 11:00:25,710 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 11:00:26,664 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 11:00:35,138 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 12960 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:00:35,138 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:00:36,718 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 11:00:44,465 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 1400 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:00:44,481 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:00:44,528 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 11:00:44,528 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 11:00:45,545 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:00:45,560 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:00:45,576 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:00:45,685 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:00:45,685 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1157 ms
+2023-06-10 11:00:46,015 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-10 11:00:46,030 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-10 11:02:14,521 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 6340 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:02:14,521 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:02:14,568 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 11:02:14,568 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 11:02:15,647 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:02:15,663 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:02:15,678 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:02:15,788 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:02:15,788 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1220 ms
+2023-06-10 11:02:16,242 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:16,320 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:02:16,415 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 11:02:16,446 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:02:16,462 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 11:02:16,462 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.333 seconds (JVM running for 3.436)
+2023-06-10 11:02:19,650 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 1228 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:02:19,650 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:02:21,637 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:21,840 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:02:22,076 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.88 seconds (JVM running for 3.774)
+2023-06-10 11:02:22,263 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:37,085 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 5416 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:02:37,085 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:02:39,487 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:39,753 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:02:40,065 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.45 seconds (JVM running for 5.104)
+2023-06-10 11:02:40,284 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:49,724 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 10528 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:02:49,740 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:02:49,772 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 11:02:49,772 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 11:02:51,056 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:02:51,072 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:02:51,072 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:02:51,072 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:02:51,087 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:02:51,087 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:02:51,087 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:02:51,087 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:02:51,182 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:02:51,182 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1410 ms
+2023-06-10 11:02:51,714 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:02:51,808 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:02:51,934 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 11:02:51,966 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:02:51,981 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 11:02:51,981 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.679 seconds (JVM running for 3.956)
+2023-06-10 11:03:45,717 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 9640 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:03:45,717 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:03:47,863 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:03:48,050 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:03:48,317 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.053 seconds (JVM running for 3.932)
+2023-06-10 11:03:48,520 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:04:16,492 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:04:22,368 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 9080 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:04:22,368 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:04:22,400 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 11:04:22,400 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 11:04:23,653 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:04:23,669 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:04:23,685 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:04:23,779 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:04:23,779 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1379 ms
+2023-06-10 11:04:24,295 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:04:24,389 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:04:24,500 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 11:04:24,531 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:04:24,562 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 11:04:24,562 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.617 seconds (JVM running for 3.887)
+2023-06-10 11:04:33,247 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 1752 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:04:33,247 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:04:35,437 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:04:35,609 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:04:35,876 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.083 seconds (JVM running for 3.959)
+2023-06-10 11:04:36,063 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:05:21,924 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:05:26,403 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 6392 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:05:26,403 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:05:26,450 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 11:05:26,450 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 11:05:27,704 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 11:05:27,719 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 11:05:27,735 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 11:05:27,829 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 11:05:27,829 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1379 ms
+2023-06-10 11:05:28,346 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:05:28,455 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:05:28,564 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 11:05:28,580 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 11:05:28,611 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 11:05:28,611 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.615 seconds (JVM running for 3.841)
+2023-06-10 11:05:34,205 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 9740 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:05:34,205 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:05:36,270 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:05:36,459 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:05:36,709 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.958 seconds (JVM running for 3.85)
+2023-06-10 11:05:36,913 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:06:10,285 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:06:26,910 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10416 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:06:26,910 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:06:29,350 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:06:29,616 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:06:29,961 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.536 seconds (JVM running for 4.672)
+2023-06-10 11:07:14,714 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:19,740 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8352 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:07:19,740 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:07:21,819 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:22,007 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:07:22,241 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.97 seconds (JVM running for 3.856)
+2023-06-10 11:07:22,439 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:27,408 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10388 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:07:27,408 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:07:29,928 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:30,163 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:07:30,491 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.556 seconds (JVM running for 4.718)
+2023-06-10 11:07:51,555 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:56,712 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10796 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:07:56,712 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:07:59,075 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:07:59,325 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:07:59,637 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 3.38 seconds (JVM running for 4.547)
+2023-06-10 11:11:45,945 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:51:35,225 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 1780 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:51:35,225 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 11:51:37,161 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:51:37,333 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 11:51:37,567 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.764 seconds (JVM running for 3.531)
+2023-06-10 11:51:37,724 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 11:51:44,755 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8372 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 11:51:44,755 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:01:42,149 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 6392 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:01:42,149 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:01:44,105 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:01:44,292 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:01:44,542 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.83 seconds (JVM running for 3.638)
+2023-06-10 12:01:44,730 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:06:49,870 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 11288 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:06:49,870 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:06:51,810 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:06:51,983 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:06:52,203 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.849 seconds (JVM running for 3.675)
+2023-06-10 12:06:52,390 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:08:39,013 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 3828 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:08:39,013 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:08:40,921 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:08:41,093 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:08:41,329 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.754 seconds (JVM running for 3.56)
+2023-06-10 12:08:41,501 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:08:56,623 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 5904 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:08:56,623 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:08:58,594 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:08:58,751 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:08:58,986 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.834 seconds (JVM running for 3.607)
+2023-06-10 12:08:59,158 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:09:58,775 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 1832 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:09:58,790 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:09:58,822 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 12:09:58,822 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 12:09:59,822 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 12:09:59,837 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 12:09:59,837 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 12:09:59,837 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 12:09:59,853 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 12:09:59,853 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 12:09:59,853 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 12:09:59,853 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 12:09:59,962 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 12:09:59,962 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1140 ms
+2023-06-10 12:10:00,416 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:10:00,494 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:10:00,587 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 12:10:00,619 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 12:10:00,634 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 12:10:00,634 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.188 seconds (JVM running for 3.167)
+2023-06-10 12:10:07,590 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8836 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:10:07,590 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:10:09,482 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:10:09,671 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:10:09,874 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.721 seconds (JVM running for 3.527)
+2023-06-10 12:10:10,030 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:11:14,901 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8900 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:11:14,901 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:11:16,888 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:11:17,044 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:11:17,263 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.784 seconds (JVM running for 3.576)
+2023-06-10 12:11:17,435 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:12:56,875 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 3640 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:12:56,875 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:15:30,873 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 4016 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:15:30,873 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:15:32,772 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:15:32,959 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:15:33,178 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.758 seconds (JVM running for 3.549)
+2023-06-10 12:15:33,350 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:17:06,048 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 9228 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:17:06,048 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:17:07,987 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:17:08,144 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:17:08,363 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.737 seconds (JVM running for 3.529)
+2023-06-10 12:17:08,550 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:20:25,427 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8720 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:20:25,427 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:20:27,367 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:20:27,539 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:20:27,757 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.752 seconds (JVM running for 3.559)
+2023-06-10 12:20:27,962 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:40:46,614 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 11284 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:40:46,614 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:40:48,568 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:40:48,740 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:40:48,975 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.799 seconds (JVM running for 3.602)
+2023-06-10 12:40:49,178 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:42:36,811 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 5472 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:42:36,811 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:42:38,734 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:42:38,891 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:42:39,110 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.722 seconds (JVM running for 3.522)
+2023-06-10 12:42:39,266 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:44:44,565 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 5504 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:44:44,565 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:44:46,505 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:44:46,646 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:44:46,833 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.706 seconds (JVM running for 3.466)
+2023-06-10 12:44:47,052 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:45:31,483 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 4256 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:45:31,483 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:45:33,421 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:45:33,593 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:45:33,814 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.739 seconds (JVM running for 3.526)
+2023-06-10 12:45:34,002 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:48:34,419 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 2844 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:48:34,419 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:48:36,359 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:48:36,530 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:48:36,749 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.737 seconds (JVM running for 3.528)
+2023-06-10 12:48:37,597 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:51:25,044 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 7140 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:51:25,044 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:51:26,984 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:51:27,219 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:51:27,469 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.862 seconds (JVM running for 3.622)
+2023-06-10 12:51:28,242 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:52:24,462 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 9928 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:52:24,462 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:52:26,355 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:52:26,527 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:52:26,746 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.691 seconds (JVM running for 3.487)
+2023-06-10 12:52:27,466 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:53:17,923 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 5620 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:53:17,923 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:53:19,873 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:53:20,033 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:53:20,253 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.736 seconds (JVM running for 3.506)
+2023-06-10 12:53:21,053 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:55:38,663 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8340 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:55:38,663 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:55:40,627 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:55:40,801 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:55:41,019 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.778 seconds (JVM running for 3.563)
+2023-06-10 12:55:41,207 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:56:39,847 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 11288 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:56:39,862 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:56:41,709 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:56:41,897 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:56:42,132 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.691 seconds (JVM running for 3.457)
+2023-06-10 12:56:42,867 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:58:52,234 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 6664 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 12:58:52,234 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 12:58:54,157 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 12:58:54,329 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 12:58:54,579 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.751 seconds (JVM running for 3.55)
+2023-06-10 12:58:54,782 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:00:55,917 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8592 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:00:55,917 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:00:57,809 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:00:57,981 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:00:58,215 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.72 seconds (JVM running for 3.472)
+2023-06-10 13:00:58,387 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:02:13,357 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 9012 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:02:13,357 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:02:15,296 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:02:15,467 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:02:15,702 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.768 seconds (JVM running for 3.557)
+2023-06-10 13:02:15,874 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:07:43,088 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 10188 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:07:43,088 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:07:44,997 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:07:45,169 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:07:45,403 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.737 seconds (JVM running for 3.508)
+2023-06-10 13:07:45,559 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:08:02,521 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 4328 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:08:02,521 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:08:04,398 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:08:04,570 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:08:04,805 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.707 seconds (JVM running for 3.475)
+2023-06-10 13:08:04,978 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:08:16,695 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 2872 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:08:16,695 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:33:18,793 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 7376 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:33:18,793 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:33:20,748 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:33:20,921 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:33:21,155 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.815 seconds (JVM running for 3.608)
+2023-06-10 13:33:21,327 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:47:24,949 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 13292 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:47:24,964 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:47:26,875 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:47:27,015 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:47:27,218 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.707 seconds (JVM running for 3.463)
+2023-06-10 13:47:27,390 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:47:46,822 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 12584 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:47:46,822 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:47:48,777 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:47:48,949 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:47:49,168 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.77 seconds (JVM running for 3.537)
+2023-06-10 13:47:49,340 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:49:16,873 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 3940 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:49:16,873 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:49:18,751 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:49:18,907 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:49:19,126 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.676 seconds (JVM running for 3.46)
+2023-06-10 13:49:19,297 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:49:31,040 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 12940 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:49:31,040 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:49:32,980 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:49:33,154 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:49:33,357 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.723 seconds (JVM running for 3.519)
+2023-06-10 13:49:33,545 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:49:59,174 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 8888 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 13:49:59,174 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 13:50:01,098 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 13:50:01,286 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 13:50:01,522 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.755 seconds (JVM running for 3.568)
+2023-06-10 13:50:01,709 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 16:25:01,993 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:50] Starting MapperTests on LAPTOP-BIN480JD with PID 9648 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 16:25:01,995 INFO [main] c.n.c.MapperTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 16:25:03,882 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 16:25:04,043 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 16:25:04,279 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:59] Started MapperTests in 2.713 seconds (JVM running for 3.559)
+2023-06-10 16:25:04,467 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 16:25:04,653 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 16:25:04,731 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 16:25:04,732 INFO [Thread-3] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-10 16:25:04,741 INFO [Thread-3] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-10 17:20:44,171 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:50] Starting MapperTests on LAPTOP-BIN480JD with PID 10752 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:20:44,174 INFO [main] c.n.c.MapperTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:20:46,157 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:20:46,344 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:20:46,576 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:59] Started MapperTests in 2.844 seconds (JVM running for 3.713)
+2023-06-10 17:20:46,754 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:20:46,937 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 17:20:47,013 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:20:47,014 INFO [Thread-3] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-10 17:20:47,022 INFO [Thread-3] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-10 17:20:53,894 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 14936 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:20:53,896 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:20:53,935 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 17:20:53,935 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 17:20:54,960 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 17:20:54,971 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:20:54,979 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 17:20:54,979 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 17:20:54,985 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 17:20:54,985 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 17:20:54,985 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 17:20:54,988 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 17:20:55,090 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 17:20:55,090 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1155 ms
+2023-06-10 17:20:55,518 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:20:55,601 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:20:55,696 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 17:20:55,719 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:20:55,738 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 17:20:55,741 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.195 seconds (JVM running for 3.278)
+2023-06-10 17:21:15,949 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 17:21:15,949 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 17:21:15,956 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 7 ms
+2023-06-10 17:21:15,993 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:21:16,097 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 17:23:46,977 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 8696 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:23:46,979 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:23:47,041 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 17:23:47,041 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 17:23:48,286 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 17:23:48,299 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:23:48,308 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 17:23:48,308 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 17:23:48,315 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 17:23:48,316 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 17:23:48,316 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 17:23:48,320 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 17:23:48,423 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 17:23:48,423 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1381 ms
+2023-06-10 17:23:48,933 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:23:49,028 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:23:49,141 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 17:23:49,171 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:23:49,194 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 17:23:49,197 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.635 seconds (JVM running for 3.901)
+2023-06-10 17:23:49,240 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 17:23:49,240 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 17:23:49,246 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 6 ms
+2023-06-10 17:23:49,283 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:23:49,408 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 17:25:33,678 INFO [Thread-14] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:25:33,679 INFO [Thread-14] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-10 17:25:33,681 INFO [Thread-14] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-10 17:25:42,856 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 10132 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:25:42,859 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:25:42,897 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 17:25:42,897 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 17:25:44,151 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 17:25:44,165 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:25:44,172 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 17:25:44,172 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 17:25:44,178 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 17:25:44,178 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 17:25:44,178 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 17:25:44,182 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 17:25:44,283 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 17:25:44,284 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1386 ms
+2023-06-10 17:25:44,817 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:25:44,911 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:25:45,021 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 17:25:45,050 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:25:45,073 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 17:25:45,076 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.649 seconds (JVM running for 3.85)
+2023-06-10 17:25:45,190 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 17:25:45,190 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 17:25:45,197 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 7 ms
+2023-06-10 17:25:45,232 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:25:45,355 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 17:27:55,830 INFO [Thread-14] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:27:55,831 INFO [Thread-14] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-10 17:27:55,839 INFO [Thread-14] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-10 17:28:00,814 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 3680 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:28:00,817 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:28:00,882 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 17:28:00,883 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 17:28:02,134 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 17:28:02,148 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:28:02,156 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 17:28:02,156 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 17:28:02,162 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 17:28:02,162 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 17:28:02,163 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 17:28:02,166 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 17:28:02,266 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 17:28:02,266 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1383 ms
+2023-06-10 17:28:02,793 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:28:02,886 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:28:02,997 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 17:28:03,025 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:28:03,047 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 17:28:03,051 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.644 seconds (JVM running for 3.865)
+2023-06-10 17:28:04,362 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 17:28:04,362 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 17:28:04,368 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 6 ms
+2023-06-10 17:28:04,406 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:28:04,528 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 17:29:23,238 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:29:23,239 INFO [Thread-13] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-10 17:29:23,247 INFO [Thread-13] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-10 17:30:10,725 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 14440 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:30:10,727 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:30:12,738 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:30:12,901 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:30:13,128 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.841 seconds (JVM running for 3.632)
+2023-06-10 17:30:13,314 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:35:45,011 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 2416 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:35:45,013 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:35:46,990 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:35:47,167 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:35:47,384 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.805 seconds (JVM running for 3.63)
+2023-06-10 17:35:47,559 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:36:03,506 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:50] Starting SensitiveTests on LAPTOP-BIN480JD with PID 1988 (started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:36:03,508 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:36:05,462 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:36:05,636 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:36:05,873 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:59] Started SensitiveTests in 2.78 seconds (JVM running for 3.574)
+2023-06-10 17:36:06,025 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:36:35,433 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 2012 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 17:36:35,436 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 17:36:35,477 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 17:36:35,477 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 17:36:36,494 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 17:36:36,506 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:36:36,513 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 17:36:36,513 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 17:36:36,519 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 17:36:36,519 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 17:36:36,519 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 17:36:36,522 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 17:36:36,624 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 17:36:36,624 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1147 ms
+2023-06-10 17:36:37,058 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 17:36:37,139 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 17:36:37,236 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 17:36:37,259 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 17:36:37,280 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 17:36:37,283 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.19 seconds (JVM running for 3.23)
+2023-06-10 17:36:43,287 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 17:36:43,288 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 17:36:43,293 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 5 ms
+2023-06-10 17:36:43,323 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 17:36:43,419 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 21:04:04,107 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 10492 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 21:04:04,110 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 21:04:04,156 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 21:04:04,157 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 21:04:05,353 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 21:04:05,368 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:04:05,376 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 21:04:05,377 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 21:04:05,384 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 21:04:05,384 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 21:04:05,385 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 21:04:05,389 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 21:04:05,503 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 21:04:05,503 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1346 ms
+2023-06-10 21:04:06,001 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 21:04:06,085 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 21:04:06,190 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 21:04:06,214 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:04:06,233 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 21:04:06,236 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.587 seconds (JVM running for 3.657)
+2023-06-10 21:04:33,644 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 21:04:33,644 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 21:04:33,649 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 5 ms
+2023-06-10 21:04:33,685 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 21:04:33,804 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 21:33:04,658 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 12100 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 21:33:04,661 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 21:33:04,727 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 21:33:04,727 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 21:33:05,715 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 21:33:05,727 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:33:05,735 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 21:33:05,735 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 21:33:05,741 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 21:33:05,741 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 21:33:05,741 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 21:33:05,744 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 21:33:05,857 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 21:33:05,858 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1131 ms
+2023-06-10 21:33:06,278 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 21:33:06,357 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 21:33:06,455 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 21:33:06,478 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:33:06,499 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 21:33:06,502 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.231 seconds (JVM running for 3.386)
+2023-06-10 21:33:14,631 INFO [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 21:33:14,631 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 21:33:14,637 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 6 ms
+2023-06-10 21:33:14,667 INFO [http-nio-8080-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 21:33:14,769 INFO [http-nio-8080-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 21:40:54,061 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 15580 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 21:40:54,064 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 21:40:54,102 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 21:40:54,102 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 21:40:55,110 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 21:40:55,122 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:40:55,129 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 21:40:55,129 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 21:40:55,135 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 21:40:55,135 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 21:40:55,135 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 21:40:55,138 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 21:40:55,244 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 21:40:55,245 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1142 ms
+2023-06-10 21:40:55,691 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 21:40:55,775 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 21:40:55,873 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 21:40:55,896 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:40:55,916 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 21:40:55,918 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.221 seconds (JVM running for 3.169)
+2023-06-10 21:40:57,068 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 21:40:57,069 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 21:40:57,076 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 7 ms
+2023-06-10 21:40:57,107 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 21:40:57,204 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-10 21:43:52,202 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:50] Starting CommunityApplication on LAPTOP-BIN480JD with PID 15444 (D:\workplace\JavaWeb_Video\Project\community\target\classes started by JKCHEN in D:\workplace\JavaWeb_Video\Project\community)
+2023-06-10 21:43:52,205 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2023-06-10 21:43:52,267 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-10 21:43:52,268 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:227] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-10 21:43:53,248 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2023-06-10 21:43:53,259 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:43:53,266 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-10 21:43:53,266 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-06-10 21:43:53,272 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] Loaded APR based Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-06-10 21:43:53,273 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-06-10 21:43:53,273 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-10 21:43:53,276 INFO [restartedMain] o.a.c.c.AprLifecycleListener [DirectJDKLog.java:173] OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-06-10 21:43:53,378 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-10 21:43:53,378 INFO [restartedMain] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1110 ms
+2023-06-10 21:43:53,801 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-10 21:43:53,884 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2023-06-10 21:43:53,982 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:57] LiveReload server is running on port 35729
+2023-06-10 21:43:54,005 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-10 21:43:54,026 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-06-10 21:43:54,028 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:59] Started CommunityApplication in 2.187 seconds (JVM running for 3.263)
+2023-06-10 21:43:54,246 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 21:43:54,246 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2023-06-10 21:43:54,251 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 5 ms
+2023-06-10 21:43:54,278 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-10 21:43:54,374 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.

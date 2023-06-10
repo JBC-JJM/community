@@ -1,6 +1,8 @@
 package com.nowcoder.community;
 
+import com.nowcoder.community.dao.DiscussPostMapper;
 import com.nowcoder.community.dao.LoginTicketMapper;
+import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.DiscussPostService;
@@ -76,6 +78,15 @@ public class MapperTests {
 
 
     @Autowired
+    private DiscussPostMapper discussPostMapper;
+    @Test
+    public void testInsert(){
+        DiscussPost discussPost = new DiscussPost(101, "ss", "ddd", 0, 0, new Date(), 12, 12.);
+        discussPostMapper.insert(discussPost);
+    }
+
+
+    @Autowired
     private LoginTicketMapper loginTicketMapper;
 
     @Test
@@ -96,4 +107,5 @@ public class MapperTests {
         System.out.println(loginTicket);
         loginTicketMapper.updateStatusTicket(tit,0);
     }
+
 }
