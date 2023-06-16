@@ -13,13 +13,18 @@ public class CookieUtil {
      * @return cookie的值
      */
     static public String getValue(HttpServletRequest request, String name) {
-        Cookie[] cookies = request.getCookies();
-        if(request==null|| StringUtils.isBlank(name)){
+
+        //判断为空永远再最前面
+        if(request==null|| name == null){
             throw new RuntimeException("请求对象为空或者名称为空");
         }
-        for (Cookie cookie : cookies) {
-            if (name.equals(cookie.getName())){
-                return cookie.getValue();
+
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals(name)) {
+                    return cookie.getValue();
+                }
             }
         }
         return null;

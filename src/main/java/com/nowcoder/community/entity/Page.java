@@ -5,7 +5,7 @@ public class Page {
     private int current = 1;  //当前页面
     private int limit = 10;   //一页面的数据量
     //响应参数
-    private int rows;   //总数
+    private int rows;   //总数量
     private String path;    //查询的url，当然其实rest风格编程不需要担心这个问题
 
     /**

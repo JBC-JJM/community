@@ -2,6 +2,7 @@ package com.nowcoder.community.service;
 
 
 import com.nowcoder.community.entity.DiscussPost;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,6 @@ public interface DiscussPostService {
     int insertPost(DiscussPost discussPost);
 
     DiscussPost findPostById(Integer id);
+
+    int updateCommentCount(Integer id,Integer commentCount);
 }

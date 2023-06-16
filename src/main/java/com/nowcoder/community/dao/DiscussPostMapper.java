@@ -20,4 +20,11 @@ public interface DiscussPostMapper {
     int insert (DiscussPost discussPost);
 
     DiscussPost selectDiscussPostById(Integer id);
+
+    /**
+     * 更新帖子的评论数量，不包括帖子评论的回复
+     * @param id 帖子的id
+     * @return
+     */
+    int updateCommentCount(@Param("id") Integer id, @Param("commentCount") Integer commentCount);
 }

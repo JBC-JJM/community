@@ -30,13 +30,13 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //从cookie中获取得ticket，根据ticket查询用户的数据
         String ticket = CookieUtil.getValue(request, "ticket");
-        LoginTicket loginTicket = userService.findLoginTicket(ticket);
-        User user = userService.selectById(loginTicket.getUserId());
         //判空
-        if (loginTicket != null && user != null) {
+        if (ticket != null) {
+            LoginTicket loginTicket = userService.findLoginTicket(ticket);
             //有效性、时效
             //date类型比较 https://blog.csdn.net/chenpp666/article/details/125172674
-            if (loginTicket.getStatus() == 0 && loginTicket.getExpired().after(new Date())) {
+            if (loginTicket != null && loginTicket.getStatus() == 0 && loginTicket.getExpired().after(new Date())) {
+                User user = userService.selectById(loginTicket.getUserId());
                 //将用户数据放到ThreadLocal
                 hostHolder.setUser(user);
             }

@@ -2,10 +2,11 @@ package com.nowcoder.community;
 
 import com.nowcoder.community.dao.DiscussPostMapper;
 import com.nowcoder.community.dao.LoginTicketMapper;
-import com.nowcoder.community.entity.DiscussPost;
-import com.nowcoder.community.entity.LoginTicket;
-import com.nowcoder.community.entity.User;
+import com.nowcoder.community.dao.MessageMapper;
+import com.nowcoder.community.entity.*;
+import com.nowcoder.community.service.CommentService;
 import com.nowcoder.community.service.DiscussPostService;
+import com.nowcoder.community.service.MessageService;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
 import org.junit.Test;
@@ -14,8 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -106,6 +108,69 @@ public class MapperTests {
         LoginTicket loginTicket = loginTicketMapper.selectByTicket(tit);
         System.out.println(loginTicket);
         loginTicketMapper.updateStatusTicket(tit,0);
+    }
+
+
+    @Autowired
+    private CommentService commentService;
+
+    @Test
+    public void testcommentService(){
+        List<Comment> commentList = commentService.selectCommentByEntity(1, 228, 1, 5);
+        System.out.println(commentList);
+
+        int count = commentService.selectCountByEntity(1, 228);
+        System.out.println(count);
+    }
+
+
+    @Autowired
+    private MessageService messageService;
+
+    @Test
+    public void testMessageService(){
+        List<Message> conversations = messageService.findConversations(111, 1, 5);
+        System.out.println("会话列表"+conversations);
+
+        int conversationCount = messageService.findConversationCount(111);
+        System.out.println(conversationCount);
+
+        List<Message> letters = messageService.findLetters("111_112", 1, 5);
+        System.out.println("和112的私信"+letters);
+
+        int letterCount = messageService.findLetterCount("111_112");
+        System.out.println(letterCount);
+
+        int letterUnreadCount = messageService.findLetterUnreadCount(131, "111_131");
+        System.out.println(letterUnreadCount);
+    }
+
+    @Autowired
+    private MessageMapper messageMapper;
+
+    @Test
+    public void testMessageMapper(){
+//        Message message = new Message();
+//        message.setConversationId("111_117");
+//        message.setContent("afd");
+//        message.setCreateTime(new Date());
+//        message.setFromId(111);
+//        message.setToId(117);
+//        message.setStatus(0);
+//        messageMapper.insertMessage(message);
+//
+        List<Integer> ids=new ArrayList<>();
+        ids.add(354);
+        ids.add(353);
+        messageMapper.updateStatus(ids,1);
+    }
+
+    @Test
+    public void testIN(){
+        Integer a=12;
+        Integer b=new Integer(12);
+        System.out.println(a.equals(b));
+        System.out.println(b==12);
     }
 
 }
