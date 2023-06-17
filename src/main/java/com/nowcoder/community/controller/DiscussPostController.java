@@ -3,6 +3,7 @@ package com.nowcoder.community.controller;
 import com.nowcoder.community.entity.*;
 import com.nowcoder.community.service.CommentService;
 import com.nowcoder.community.service.DiscussPostService;
+import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.HostHolder;
@@ -23,6 +24,9 @@ public class DiscussPostController implements CommunityConstant {
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+    private LikeService likeService;
 
     /**
      * 添加帖子，有手就行
@@ -62,13 +66,23 @@ public class DiscussPostController implements CommunityConstant {
      */
     @GetMapping("/detail/{discussPostId}")
     public String getDiscussPost(@PathVariable("discussPostId") int discussPostId, Page page, Model model) {
-        // 帖子
+        //1、 帖子
         DiscussPost post = discussPostService.findPostById(discussPostId);
         // 找作者,这里进行了两次查询表，可以说是比较低效的，可以在dao层使用联表查询，是业务就重叠了
         //到时使用reids优化
         User user = userService.selectById(post.getUserId());
+        model.addAttribute("post", post);
+        model.addAttribute("user", user);
 
-        //评论、回复
+        //帖子点赞消息
+        long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussPostId);
+        int likeStatus = hostHolder.getUser() == null ? 0 :
+                likeService.findEntityLikeStatus(user.getId(), ENTITY_TYPE_POST, discussPostId);
+
+        model.addAttribute("likeCount", likeCount);
+        model.addAttribute("likeStatus", likeStatus);
+
+
         //前端的所需要的数据处理
         page.setLimit(5);
         page.setRows(post.getCommentCount());//直接拿帖子表的评论数
@@ -76,17 +90,27 @@ public class DiscussPostController implements CommunityConstant {
 
         //查询评论表对于帖子的评论
         List<Comment> commentList = commentService.selectCommentByEntity(ENTITY_TYPE_POST, discussPostId, page.getOffset(), page.getLimit());
-        //评论：对于帖子的评论
+        //评论+回复
         List<Map<String, Object>> commentVoList = new ArrayList<>();
 
         if (commentList != null) {
             for (Comment comment : commentList) {
                 Map<String, Object> commentVo = new HashMap<>();
 
+                //2、评论
                 commentVo.put("comment", comment);//评论
                 commentVo.put("user", userService.selectById(comment.getUserId()));//作者
 
-                //查询评论表对于评论的评论
+                //评论点赞消息
+                likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, comment.getId());
+                likeStatus = hostHolder.getUser() == null ? 0 :
+                        likeService.findEntityLikeStatus(user.getId(), ENTITY_TYPE_COMMENT, comment.getId());
+                commentVo.put("likeCount", likeCount);
+                commentVo.put("likeStatus", likeStatus);
+
+
+
+                //3、查询评论表对于评论的评论
                 List<Comment> replyList = commentService.selectCommentByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
                 //回复：对于评论的评论，所以嵌套到评论循环中
                 List<Map<String, Object>> replyVoList = new ArrayList<>();
@@ -98,6 +122,13 @@ public class DiscussPostController implements CommunityConstant {
                         replyVo.put("user", userService.selectById(reply.getUserId()));//作者
                         User target = reply.getTargetId() == 0 ? null : userService.selectById(reply.getTargetId());
                         replyVo.put("target", target);//回复对象
+
+                        //回复点赞消息
+                        likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, reply.getId());
+                        likeStatus = hostHolder.getUser() == null ? 0 :
+                                likeService.findEntityLikeStatus(user.getId(), ENTITY_TYPE_COMMENT, reply.getId());
+                        replyVo.put("likeCount", likeCount);
+                        replyVo.put("likeStatus", likeStatus);
 
                         replyVoList.add(replyVo);
                     }
@@ -112,10 +143,6 @@ public class DiscussPostController implements CommunityConstant {
                 //总对象，变态对象
                 commentVoList.add(commentVo);
             }
-
-
-            model.addAttribute("post", post);
-            model.addAttribute("user", user);
         }
 
 

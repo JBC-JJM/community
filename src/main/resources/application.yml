@@ -41,6 +41,20 @@ spring:
     protocol: smtps	#加密协议
     properties:
       mail.smtp.ssl.enable: true	#ssl安全连接
+#reids
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    password:
+    lettuce:
+      pool:
+        max-active: 8  #最大连接
+        max-idle: 8   #最大空闲连接
+        min-idle: 0   #最小空闲连接
+        max-wait: 100ms #连接等待时间
+
+
 
 #mybatis配置
 mybatis:
