@@ -3,6 +3,7 @@ package com.nowcoder.community.controller;
 import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.entity.UpdatePasswordFrom;
 import com.nowcoder.community.entity.User;
+import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
@@ -49,6 +50,7 @@ public class UserController {
     }
 
     //上传图片
+
     /**
      * @param model
      * @param headerImage : 图片文件接收,不要犯请求参数名称不对应的错误,为了使用什么nb的框架参数在http参数后名称不一致大概都会有错，即使封装了
@@ -96,7 +98,7 @@ public class UserController {
         // 服务器存放路径
         fileName = uploadPath + "/" + fileName;
         // 文件类型
-        String suffix = fileName.substring(fileName.lastIndexOf(".")+1);
+        String suffix = fileName.substring(fileName.lastIndexOf(".") + 1);
         // 响应图片
         response.setContentType("image/" + suffix);
         //自动关闭tyr-catch-resources 资源
@@ -111,7 +113,7 @@ public class UserController {
 //            }
 
             //输入流(BufferedImage)、类型、输出流
-            ImageIO.write(ImageIO.read(fis),suffix,os);
+            ImageIO.write(ImageIO.read(fis), suffix, os);
         } catch (IOException e) {
             logger.error("读取头像失败: " + e.getMessage());
         }
@@ -119,21 +121,43 @@ public class UserController {
 
     //修改密码
     @PostMapping("/updatePassword")
-    public String updatePassword(Model model, UpdatePasswordFrom updatePasswordFrom){
+    public String updatePassword(Model model, UpdatePasswordFrom updatePasswordFrom) {
         User user = hostHolder.getUser();
         Integer id = user.getId();
         String newPassword = updatePasswordFrom.getNewPassword();
         String oldPassword = updatePasswordFrom.getOldPassword();
         String confirmPassword = updatePasswordFrom.getConfirmPassword();
 
-        if(!confirmPassword.equals(newPassword)){
+        if (!confirmPassword.equals(newPassword)) {
             throw new RuntimeException("两次输入的密码不一致");
         }
 
         boolean count = userService.updatePassword(id, newPassword, oldPassword);
-        if (count==false){
+        if (count == false) {
             throw new RuntimeException("更新密码失败，旧密码错误或者dao调用失败");
         }
         return "redirect:/index";
     }
+
+
+    @Autowired
+    private LikeService likeService;
+
+    //用户详细页面
+    @GetMapping("/profile/{userId}")
+    public String getProfilePage(@PathVariable int userId, Model model) {
+
+        User user = userService.selectById(userId);
+
+        if (user == null) {
+            throw new RuntimeException("用户不存在");
+        }
+        model.addAttribute("user", user);
+
+        int userLikeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", userLikeCount);
+
+        return "site/profile";
+    }
+
 }
