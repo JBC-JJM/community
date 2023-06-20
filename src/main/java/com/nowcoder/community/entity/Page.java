@@ -1,6 +1,9 @@
 package com.nowcoder.community.entity;
 
 public class Page {
+    public Page() {
+    }
+
     //请求参数接收
     private int current = 1;  //当前页面
     private int limit = 10;   //一页面的数据量

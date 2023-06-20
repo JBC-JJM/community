@@ -3,8 +3,10 @@ package com.nowcoder.community.controller;
 import com.nowcoder.community.annotation.LoginRequired;
 import com.nowcoder.community.entity.UpdatePasswordFrom;
 import com.nowcoder.community.entity.User;
+import com.nowcoder.community.service.FollowService;
 import com.nowcoder.community.service.LikeService;
 import com.nowcoder.community.service.UserService;
+import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.HostHolder;
 import org.apache.commons.lang3.StringUtils;
@@ -23,7 +25,7 @@ import java.io.*;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements CommunityConstant {
 
     @Autowired
     private UserService userService;
@@ -143,12 +145,14 @@ public class UserController {
     @Autowired
     private LikeService likeService;
 
-    //用户详细页面
+    @Autowired
+    private FollowService followService;
+
+    //（要查看的）用户(可以是自己，也可以是别人)详细页面
     @GetMapping("/profile/{userId}")
     public String getProfilePage(@PathVariable int userId, Model model) {
 
         User user = userService.selectById(userId);
-
         if (user == null) {
             throw new RuntimeException("用户不存在");
         }
@@ -156,6 +160,19 @@ public class UserController {
 
         int userLikeCount = likeService.findUserLikeCount(userId);
         model.addAttribute("likeCount", userLikeCount);
+
+        //关注的up总数
+        long followeeCount = followService.findFolloweeCount(userId, ENTITY_TYPE_USER);
+        //粉丝总数
+        long followerCount = followService.findFollowerCount(ENTITY_TYPE_USER, userId);
+        //关注状态
+        boolean hasFollowed = false;
+        if (hostHolder.getUser() != null) {
+            hasFollowed = followService.hasFollowed(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+        }
+        model.addAttribute("followeeCount", followeeCount);
+        model.addAttribute("followerCount", followerCount);
+        model.addAttribute("hasFollowed", hasFollowed);
 
         return "site/profile";
     }

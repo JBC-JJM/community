@@ -8,14 +8,17 @@ import com.nowcoder.community.entity.UserForm;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityUtil;
 import com.nowcoder.community.util.MailClient;
+import com.nowcoder.community.util.RedisKeyUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import static com.nowcoder.community.util.CommunityConstant.*;
 
@@ -114,14 +117,20 @@ public class UserServiceImpl implements UserService {
             return ACTIVATION_REPEAT;
         }
         //激活他
-        userMapper.updateStatus(userId, 1);
+//        userMapper.updateStatus(userId, 1);
+        updateStatus(userId, 1);
         return ACTIVATION_SUCCESS;
     }
 
 
     @Override
     public User selectById(int id) {
-        return userMapper.selectById(id);
+//        return userMapper.selectById(id);
+        User user = getCache(id);
+        if (user == null) {
+            user = initCache(id);
+        }
+        return user;
     }
 
     @Override
@@ -141,20 +150,28 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean updateStatus(int id, int status) {
+//        return userMapper.updateStatus(id, status) > 0;
+        clearCache(id);
         return userMapper.updateStatus(id, status) > 0;
     }
 
     @Override
     public boolean updateHeader(int id, String headerUrl) {
-        return userMapper.updateHeader(id, headerUrl) > 0;
+        int rows = userMapper.updateHeader(id, headerUrl);
+        clearCache(id);//先更新在删除，假如更新失败就不需要删除了
+        return rows > 0;
     }
 
 
     @Autowired
     private LoginTicketMapper loginTicketMapper;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     /**
      * 其中时长是时间戳，以秒为单位
+     *
      * @param userForm 将前端传来的数据封装一下：名称+密码+时长+记住我
      * @return
      */
@@ -180,7 +197,7 @@ public class UserServiceImpl implements UserService {
             map.put("usernameMsg", "账号不存在或者没激活");
             return map;
         }
-        String password=CommunityUtil.MD5(userForm.getPassword()+user.getSalt());
+        String password = CommunityUtil.MD5(userForm.getPassword() + user.getSalt());
         if (!user.getPassword().equals(password)) {
             map.put("passwordMsg", "密码错误!");
             return map;
@@ -190,29 +207,39 @@ public class UserServiceImpl implements UserService {
         //凭证
         String ticket = CommunityUtil.generateUUID();
         //有效时长，注意时间戳以毫秒为单位
-        Date date = new Date(System.currentTimeMillis() + userForm.getExpiredSecond()*1000);
+        Date date = new Date(System.currentTimeMillis() + userForm.getExpiredSecond() * 1000);
         //封装为实体搞到dao
         LoginTicket loginTicket = new LoginTicket(user.getId(), ticket, 0, date);
-        loginTicketMapper.insertLoginTicket(loginTicket);
-        map.put("ticket",ticket);
+
+//        loginTicketMapper.insertLoginTicket(loginTicket);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        redisTemplate.opsForValue().set(redisKey, loginTicket);
+
+        map.put("ticket", ticket);
         return map;
     }
 
     @Override
     public void logout(String ticket) {
-        loginTicketMapper.updateStatusTicket(ticket,1);
+//        loginTicketMapper.updateStatusTicket(ticket,1);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        LoginTicket loginTicket = (LoginTicket) redisTemplate.opsForValue().get(redisKey);
+        loginTicket.setStatus(1);
+        redisTemplate.opsForValue().set(redisKey, loginTicket);
     }
 
     @Override
     public LoginTicket findLoginTicket(String ticket) {
-        return loginTicketMapper.selectByTicket(ticket);
+//        return loginTicketMapper.selectByTicket(ticket);
+        String redisKey = RedisKeyUtil.getTicketKey(ticket);
+        return (LoginTicket) redisTemplate.opsForValue().get(redisKey);
     }
 
     @Override
-    public boolean updatePassword(int id, String password,String oldPassword) {
+    public boolean updatePassword(int id, String password, String oldPassword) {
         //校验旧密码
         User user = userMapper.selectById(id);
-        oldPassword=CommunityUtil.MD5(oldPassword+user.getSalt());
+        oldPassword = CommunityUtil.MD5(oldPassword + user.getSalt());
         if (!user.getPassword().equals(oldPassword)) {
             return false;
         }
@@ -220,9 +247,27 @@ public class UserServiceImpl implements UserService {
         //插入新密码
         String salt = user.getSalt();
         password = CommunityUtil.MD5(password + salt);
-        int count = userMapper.updatePassword(id,password);
+        int count = userMapper.updatePassword(id, password);
+        clearCache(id);
 
         return count > 0;
     }
 
+
+    private User getCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        return (User) redisTemplate.opsForValue().get(redisKey);
+    }
+
+    private User initCache(int userId) {
+        User user = userMapper.selectById(userId);
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.opsForValue().set(redisKey, user, 3600, TimeUnit.SECONDS);
+        return user;
+    }
+
+    private void clearCache(int userId) {
+        String redisKey = RedisKeyUtil.getUserKey(userId);
+        redisTemplate.delete(redisKey);
+    }
 }

@@ -7,6 +7,10 @@ public class LoginTicket {
     private Integer userId;
     private String ticket;
     private Integer status;
+
+    public LoginTicket() {
+    }
+
     /**
      * 时效：当前时间戳+有效时长
      */

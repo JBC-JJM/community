@@ -6,6 +6,9 @@ import com.nowcoder.community.entity.User;
 import com.nowcoder.community.entity.UserForm;
 import com.nowcoder.community.service.UserService;
 import com.nowcoder.community.util.CommunityConstant;
+import com.nowcoder.community.util.CommunityUtil;
+import com.nowcoder.community.util.CookieUtil;
+import com.nowcoder.community.util.RedisKeyUtil;
 import com.sun.deploy.net.HttpResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
@@ -13,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +31,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @Controller
 public class LoginController implements CommunityConstant {
@@ -45,16 +50,27 @@ public class LoginController implements CommunityConstant {
     @GetMapping("/login")
     public String getLoginPage(Model model) {
         UserForm userForm = new UserForm();
-        model.addAttribute("userForm", userForm);
+        model.addAttribute("userForm", userForm);//没有的东西
         return "site/login";
     }
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @GetMapping("/kaptcha-image")
-    public void getKaptchaImage(HttpSession session, HttpServletResponse response) throws IOException {
+    public void getKaptchaImage(/*HttpSession session,*/ HttpServletResponse response) throws IOException {
         String text = kaptcha.createText();
         BufferedImage img = kaptcha.createImage(text);
 
-        session.setAttribute("verifycode", text);
+//        session.setAttribute("verifycode", text);
+        String kaptchaOwner = CommunityUtil.generateUUID();
+        Cookie cookie = new Cookie("kaptchaOwner", kaptchaOwner);
+        cookie.setMaxAge(60);
+        cookie.setPath(contextPath);
+        response.addCookie(cookie);
+        String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+        redisTemplate.opsForValue().set(redisKey, text, 60, TimeUnit.SECONDS);//时长：60秒
+
 
         ServletOutputStream out = null;
         try {
@@ -74,10 +90,16 @@ public class LoginController implements CommunityConstant {
     @PostMapping("/login")
     public String login(Model model,
                         UserForm userForm,
-                        HttpSession session,
+            /* HttpSession session,*/
+                        @CookieValue("kaptchaOwner") String kaptchaOwner,
                         HttpServletResponse response) {
 
-        String verifyCode = (String) session.getAttribute("verifycode");
+//        String verifyCode = (String) session.getAttribute("verifycode");
+        String verifyCode = null;
+        if (!StringUtils.isBlank(kaptchaOwner)) {
+            String redisKey = RedisKeyUtil.getKaptchaKey(kaptchaOwner);
+            verifyCode = (String) redisTemplate.opsForValue().get(redisKey);
+        }
 
         //判空和验证码正确(无视大小写)吗
         if (StringUtils.isBlank(verifyCode) || StringUtils.isBlank(userForm.getVerifycode()) || !verifyCode.equalsIgnoreCase(userForm.getVerifycode())) {
