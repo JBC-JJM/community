@@ -9,6 +9,18 @@ import java.util.concurrent.BlockingQueue;
 
 public class BlockingQueueTest {
 
+    public static void main(String[] args) throws InterruptedException {
+        BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue(10);
+        new Thread(new thread3(blockingQueue)).start();
+        new Thread(new thread4(blockingQueue)).start();
+        new Thread(new thread4(blockingQueue)).start();
+        new Thread(new thread4(blockingQueue)).start();//线程会在run方法结束后退出
+
+        Thread.sleep(10000);
+        System.out.println(blockingQueue.take());//为空是不会返回空，而是堵塞
+    }
+
+
     Thread thread1 = new Thread(new Runnable() {
         @Override
         public void run() {
@@ -41,16 +53,6 @@ public class BlockingQueueTest {
 //        new Thread().sleep(20);
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue(10);
-        new Thread(new thread3(blockingQueue)).start();
-        new Thread(new thread4(blockingQueue)).start();
-        new Thread(new thread4(blockingQueue)).start();
-        new Thread(new thread4(blockingQueue)).start();
-
-        Thread.sleep(10000);
-        System.out.println(blockingQueue.take());//为空是不会返回空，而是堵塞
-    }
 }
 
 class thread3 implements Runnable {

@@ -53,6 +53,15 @@ spring:
         max-idle: 8   #最大空闲连接
         min-idle: 0   #最小空闲连接
         max-wait: 100ms #连接等待时间
+  #kafka
+  kafka:
+    #
+    bootstrap-servers: "localhost:9092"
+    #消费者
+    consumer:
+      group-id: "test-consumer-group"
+      enable-auto-commit: true #？
+      auto-commit-interval: 3000 #3秒
 
 
 
