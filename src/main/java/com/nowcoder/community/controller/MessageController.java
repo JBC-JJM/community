@@ -232,13 +232,6 @@ public class MessageController implements CommunityConstant {
     }
 
 
-    //ES的mapper
-    @Autowired
-    private DiscussPostRepository discussRepository;
-
-    @Autowired
-    private ElasticsearchTemplate searchTemplate;
-
     //显示系统通知详细页
     @GetMapping("/notice/detail/{topic}")
     public String getNoticeDetail(Model model, Page page, @PathVariable("topic") String topic) {
