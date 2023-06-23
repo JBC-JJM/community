@@ -108,7 +108,10 @@ public class LoginController implements CommunityConstant {
         }
 
         //是否勾选记住我
-        int seconds = userForm.getRememberme() ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
+        int seconds = DEFAULT_EXPIRED_SECONDS;
+        if (userForm.getRememberme() != null && userForm.getRememberme()) {
+            seconds = REMEMBER_EXPIRED_SECONDS;
+        }
         userForm.setExpiredSecond((long) seconds);
 
         Map<String, Object> map = userService.login(userForm);

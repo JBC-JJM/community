@@ -117,7 +117,7 @@ public class UserServiceImpl implements UserService {
             return ACTIVATION_REPEAT;
         }
         //激活他
-//        userMapper.updateStatus(userId, 1);
+//        userMapper.readMessage(userId, 1);
         updateStatus(userId, 1);
         return ACTIVATION_SUCCESS;
     }
@@ -150,7 +150,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean updateStatus(int id, int status) {
-//        return userMapper.updateStatus(id, status) > 0;
+//        return userMapper.readMessage(id, status) > 0;
         clearCache(id);
         return userMapper.updateStatus(id, status) > 0;
     }

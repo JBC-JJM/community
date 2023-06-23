@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface CommentService {
 
+    Comment findCommentById(Integer commentId);
+
     /**
      * @param entityType 评论的对象：帖子/评论的评论
      * @param entityId   评论的帖子的id

@@ -1,20 +1,45 @@
 package com.nowcoder.community.entity;
 
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.util.Date;
 
+@Document(indexName = "discusspost", type = "_doc", shards = 6, replicas = 3)
 public class DiscussPost {
-    private Integer id;
-    private Integer userId;
+    //id
+    @Id
+    private int id;
+
+    @Field(type = FieldType.Integer)
+    private int userId;
+
+    // 查询的主要字段 ----> 存放分词：ik_max_word；搜索分词：ik_smart
+    @Field(type = FieldType.Text, analyzer = "ik_max_word", searchAnalyzer = "ik_smart")
     private String title;
+
+    // 查询的主要字段 ----> 存放分词：ik_max_word；搜索分词：ik_smart
+    @Field(type = FieldType.Text, analyzer = "ik_max_word", searchAnalyzer = "ik_smart")
     private String content;
-    private Integer type;
-    private Integer status;
+
+    @Field(type = FieldType.Integer)
+    private int type;
+
+    @Field(type = FieldType.Integer)
+    private int status;
     //可以使用string接收日期
     //https://blog.csdn.net/ITxiaofeixiang/article/details/117048760
+    @Field(type = FieldType.Date)
     private Date createTime;
-    private Integer commentCount;
-    private Double score;
+
+    @Field(type = FieldType.Integer)
+    private int commentCount;
+
+    @Field(type = FieldType.Double)
+    private double score;
 
     public DiscussPost() {
     }

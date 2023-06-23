@@ -23,6 +23,11 @@ public class CommentServiceImpl implements CommentService {
     private CommentMapper commentMapper;
 
     @Override
+    public Comment findCommentById(Integer commentId) {
+        return commentMapper.findCommentById(commentId);
+    }
+
+    @Override
     public List<Comment> selectCommentByEntity(Integer entityType, Integer entityId, Integer offset, Integer limit) {
         return commentMapper.selectCommentByEntity(entityType, entityId, offset, limit);
     }

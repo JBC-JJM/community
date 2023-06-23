@@ -18,28 +18,28 @@
         <java.version>8</java.version>
     </properties>
     <dependencies>
-<!--        aop-->
+        <!--        aop-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-<!--        模板-->
+        <!--        模板-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-<!--        服务器-->
+        <!--        服务器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<!--            springboot的开发者工具，右边会有个小框框-->
+        <!--            springboot的开发者工具，右边会有个小框框-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
-<!--            <optional>true</optional>-->
+            <!--            <optional>true</optional>-->
         </dependency>
 
         <dependency>
@@ -48,21 +48,27 @@
             <scope>test</scope>
         </dependency>
 
-<!--        springBoot-mail-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
+        </dependency>
+
+        <!--        springBoot-mail-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
             <version>2.2.6.RELEASE</version>
         </dependency>
 
-<!--        commons-lang3工具-->
+        <!--        commons-lang3工具-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.12.0</version>
         </dependency>
 
-<!--        kaptcha验证码工具-->
+        <!--        kaptcha验证码工具-->
         <dependency>
             <groupId>com.github.penggle</groupId>
             <artifactId>kaptcha</artifactId>
@@ -80,12 +86,17 @@
             <artifactId>commons-pool2</artifactId>
         </dependency>
 
-<!--        kafka-->
+        <!--        kafka-->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
+<!--        ES-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
 
         <!--        驱动-->
         <dependency>
@@ -94,18 +105,18 @@
             <version>8.0.25</version>
         </dependency>
 
-<!--        mybatis-spring-boot：有mybatis、mybatis-springBoot、jdbc-->
+        <!--        mybatis-spring-boot：有mybatis、mybatis-springBoot、jdbc-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.0.1</version>
         </dependency>
 
-<!--        导连接池的包，虽然springboot确实内嵌了HikariCP的版本，但是这个不导包居然也没事-->
-<!--        <dependency>-->
-<!--            <groupId>com.zaxxer</groupId>-->
-<!--            <artifactId>HikariCP</artifactId>-->
-<!--        </dependency>-->
+        <!--        导连接池的包，虽然springboot确实内嵌了HikariCP的版本，但是这个不导包居然也没事-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.zaxxer</groupId>-->
+        <!--            <artifactId>HikariCP</artifactId>-->
+        <!--        </dependency>-->
 
     </dependencies>
 

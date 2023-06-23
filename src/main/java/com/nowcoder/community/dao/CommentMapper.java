@@ -18,4 +18,6 @@ public interface CommentMapper {
                             @Param("entityId") Integer entityId);
 
     int insertComment(Comment comment);
+
+    Comment findCommentById(Integer commentId);
 }

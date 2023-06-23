@@ -62,6 +62,11 @@ spring:
       group-id: "test-consumer-group"
       enable-auto-commit: true #？
       auto-commit-interval: 3000 #3秒
+  #ES
+  data:
+    elasticsearch:
+      cluster-name: my-application #集群名称？
+      cluster-nodes: 127.0.0.1:9300 #节点：使用tcp端口
 
 
 
