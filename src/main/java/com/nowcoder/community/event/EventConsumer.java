@@ -1,8 +1,11 @@
 package com.nowcoder.community.event;
 
 import com.alibaba.fastjson.JSON;
+import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.Event;
 import com.nowcoder.community.entity.Message;
+import com.nowcoder.community.service.DiscussPostService;
+import com.nowcoder.community.service.ElasticsearchService;
 import com.nowcoder.community.service.MessageService;
 import com.nowcoder.community.util.CommunityConstant;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -24,10 +27,10 @@ public class EventConsumer implements CommunityConstant {
 
     private static final Logger logger = LoggerFactory.getLogger(EventConsumer.class);
 
-    //订阅多个主题
+    //订阅多个通知主题:评论、关注、点赞
     @KafkaListener(topics = {TOPIC_COMMENT, TOPIC_FOLLOW, TOPIC_LIKE})
     public void handleConsumerMessage(ConsumerRecord record) {
-        if (record == null) {
+        if (record == null||record.value()==null) {
             logger.error("消息为空");
             return;
         }
@@ -67,5 +70,31 @@ public class EventConsumer implements CommunityConstant {
 
         message.setContent(JSON.toJSONString(content));
         messageService.insertMessage(message);
+    }
+
+
+    @Autowired
+    private ElasticsearchService searchService;
+
+    @Autowired
+    private DiscussPostService discussPostService;
+
+    @KafkaListener(topics = {TOPIC_PUBLISH})
+    public void handleConsumerPUBLISH(ConsumerRecord record) {
+        if (record == null||record.value()==null) {
+            logger.error("消息为空");
+            return;
+        }
+        // 解析event在放到discussPost
+        Event event = JSON.parseObject(record.value().toString(), Event.class);
+        if (event == null) {
+            logger.error("消息格式有误");
+            return;
+        }
+
+        //插入或者更新es：感觉就是es和mysql的一致性的问题
+        DiscussPost post = discussPostService.findPostById(event.getEntityId());
+        searchService.saveDiscussPost(post);
+
     }
 }

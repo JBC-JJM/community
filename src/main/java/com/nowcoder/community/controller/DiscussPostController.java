@@ -1,13 +1,12 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.entity.*;
-import com.nowcoder.community.service.CommentService;
-import com.nowcoder.community.service.DiscussPostService;
-import com.nowcoder.community.service.LikeService;
-import com.nowcoder.community.service.UserService;
+import com.nowcoder.community.event.EventProducer;
+import com.nowcoder.community.service.*;
 import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +26,12 @@ public class DiscussPostController implements CommunityConstant {
 
     @Autowired
     private LikeService likeService;
+
+    @Autowired
+    private ElasticsearchService searchService;
+
+    @Autowired
+    private EventProducer eventProducer;
 
     /**
      * 添加帖子，有手就行
@@ -48,6 +53,17 @@ public class DiscussPostController implements CommunityConstant {
         discussPost.setCommentCount(0);
         discussPost.setScore(0.0);
         int count = discussPostService.insertPost(discussPost);
+
+
+        // 触发发帖的es事件:kafka
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(user.getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(discussPost.getId());
+        eventProducer.fireEvent(event);
+
+
         return new Result(0, null, "插入评论成功");
     }
 

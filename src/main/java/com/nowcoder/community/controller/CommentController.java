@@ -48,7 +48,7 @@ public class CommentController implements CommunityConstant {
 
         int count = commentService.addComment(comment);
 
-        //系统发信息
+        //系统发通知通知接收者
         Event event = new Event()
                 .setTopic(TOPIC_COMMENT)
                 .setUserId(user.getId())
@@ -65,6 +65,17 @@ public class CommentController implements CommunityConstant {
         }
 
         eventProducer.fireEvent(event);
+
+
+        //触发添加es评论数量事件:kafka，对es来说插入和更改是同一种事件
+       if(comment.getEntityType()==ENTITY_TYPE_POST){
+           event = new Event()
+                   .setTopic(TOPIC_PUBLISH)
+                   .setUserId(user.getId())
+                   .setEntityType(ENTITY_TYPE_POST)
+                   .setEntityId(discussPostId);
+           eventProducer.fireEvent(event);
+       }
 
 
         return "redirect:/discuss/detail/" + discussPostId;
