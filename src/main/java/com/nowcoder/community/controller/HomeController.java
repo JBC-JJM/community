@@ -69,4 +69,9 @@ public class HomeController implements CommunityConstant {
         //异常页面
         return "/error/500";
     }
+
+    @RequestMapping(path = "/denied", method = RequestMethod.GET)
+    public String getDeniedPage() {
+        return "/error/404";
+    }
 }

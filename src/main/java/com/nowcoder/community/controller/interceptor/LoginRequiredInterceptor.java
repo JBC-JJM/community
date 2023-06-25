@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 /**
- * 拦截需要登入才能访问的请求，为的就是不需要一个一个的写配置中
+ * 权限控制：拦截需要登入才能访问的请求，为的就是不需要一个一个的写配置中
  */
 @Component
 public class LoginRequiredInterceptor implements HandlerInterceptor {

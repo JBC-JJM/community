@@ -3,7 +3,9 @@ package com.nowcoder.community.service;
 import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.entity.UserForm;
+import org.springframework.security.core.GrantedAuthority;
 
+import java.util.Collection;
 import java.util.Map;
 
 public interface UserService {
@@ -54,4 +56,11 @@ public interface UserService {
      * @return
      */
     boolean updateHeader(int id,String headerUrl);
+
+    /**
+     * 查找当前用户的权限（角色）
+     * @param userId
+     * @return 权限集合
+     */
+    public Collection<? extends GrantedAuthority> getAuthorities(int userId);
 }
