@@ -125,7 +125,6 @@ public class DiscussPostController implements CommunityConstant {
                 commentVo.put("likeStatus", likeStatus);
 
 
-
                 //3、查询评论表对于评论的评论
                 List<Comment> replyList = commentService.selectCommentByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
                 //回复：对于评论的评论，所以嵌套到评论循环中
@@ -165,5 +164,59 @@ public class DiscussPostController implements CommunityConstant {
         model.addAttribute("comments", commentVoList);
 
         return "/site/discuss-detail";
+    }
+
+
+    //置顶
+    @PostMapping("/top")
+    @ResponseBody
+    public Result setTop(int discussPostId) {
+
+        discussPostService.updateType(discussPostId, 1);
+
+        // 触发发帖(更新)的es事件:kafka
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return new Result(0, null, "已置顶");
+    }
+
+    //加精
+    @PostMapping("/wonderful")
+    @ResponseBody
+    public Result setWonderful(int discussPostId) {
+
+        discussPostService.updateStatus(discussPostId, 1);
+
+        // 触发发帖(更新)的es事件:kafka
+        Event event = new Event()
+                .setTopic(TOPIC_PUBLISH)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return new Result(0, null, "已加精");
+    }
+
+    @PostMapping("/delete")
+    @ResponseBody
+    public Result setDelete(int discussPostId) {
+
+        discussPostService.updateStatus(discussPostId, 2);
+
+        // 触发发帖(更新)的es事件:kafka
+        Event event = new Event()
+                .setTopic(TOPIC_DELETE)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(ENTITY_TYPE_POST)
+                .setEntityId(discussPostId);
+        eventProducer.fireEvent(event);
+
+        return new Result(0, null, "已删除");
     }
 }

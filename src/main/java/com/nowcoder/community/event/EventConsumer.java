@@ -30,7 +30,7 @@ public class EventConsumer implements CommunityConstant {
     //订阅多个通知主题:评论、关注、点赞
     @KafkaListener(topics = {TOPIC_COMMENT, TOPIC_FOLLOW, TOPIC_LIKE})
     public void handleConsumerMessage(ConsumerRecord record) {
-        if (record == null||record.value()==null) {
+        if (record == null || record.value() == null) {
             logger.error("消息为空");
             return;
         }
@@ -79,9 +79,10 @@ public class EventConsumer implements CommunityConstant {
     @Autowired
     private DiscussPostService discussPostService;
 
+    //es：发帖、更新帖子
     @KafkaListener(topics = {TOPIC_PUBLISH})
     public void handleConsumerPUBLISH(ConsumerRecord record) {
-        if (record == null||record.value()==null) {
+        if (record == null || record.value() == null) {
             logger.error("消息为空");
             return;
         }
@@ -96,5 +97,23 @@ public class EventConsumer implements CommunityConstant {
         DiscussPost post = discussPostService.findPostById(event.getEntityId());
         searchService.saveDiscussPost(post);
 
+    }
+
+    //es:删除帖子
+    @KafkaListener(topics = {TOPIC_DELETE})
+    public void handleDeleteMessage(ConsumerRecord record) {
+        if (record == null || record.value() == null) {
+            logger.error("消息为空");
+            return;
+        }
+        // 解析event在放到discussPost
+        Event event = JSON.parseObject(record.value().toString(), Event.class);
+        if (event == null) {
+            logger.error("消息格式有误");
+            return;
+        }
+
+        //插入或者更新es：感觉就是es和mysql的一致性的问题
+        searchService.delete(event.getEntityId());
     }
 }

@@ -20,4 +20,20 @@ public interface DiscussPostService {
     DiscussPost findPostById(Integer id);
 
     int updateCommentCount(Integer id,Integer commentCount);
+
+    /**
+     *
+     * @param id
+     * @param type 1：置顶
+     * @return
+     */
+    int updateType(Integer id,Integer type);
+
+    /**
+     *
+     * @param id
+     * @param status 1：加精，2：删除
+     * @return
+     */
+    int updateStatus(Integer id,Integer status);
 }
