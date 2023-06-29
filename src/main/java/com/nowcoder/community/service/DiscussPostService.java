@@ -9,8 +9,17 @@ import java.util.List;
 public interface DiscussPostService {
     //    查询所有帖子,userId不为null则查询某个用户的帖子，需要注意的是userId是string，默认屏蔽拉雷的
     List<DiscussPost> selectAll(Integer userId);
-    //    查询一页数据，userId默认为0，支持查询某个用户的帖子
-    List<DiscussPost> discussPosts(Integer userId, int offset, int limit);
+
+    /**
+     *  查询一页数据，userId默认为0，支持查询某个用户的帖子
+     * @param userId
+     * @param offset
+     * @param limit
+     * @param orderMode 0:正常排行 ；1：热度排行
+     * @return
+     */
+    List<DiscussPost> discussPosts(Integer userId, int offset, int limit,int orderMode);
+
     //    查询总的数量，userId默认为0，支持查询某个用户的帖子的
     int discussPostsRows(Integer userId);
 
@@ -36,4 +45,7 @@ public interface DiscussPostService {
      * @return
      */
     int updateStatus(Integer id,Integer status);
+
+    //更新热度
+    int updateScore(int id, double score);
 }

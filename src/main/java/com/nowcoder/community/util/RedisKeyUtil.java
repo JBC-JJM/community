@@ -86,4 +86,11 @@ public class RedisKeyUtil {
         return PREFIX_DAU + SPLIT + startDate + SPLIT + endDate;
     }
 
+
+    // 帖子分数
+    private static final String PREFIX_POST = "post";
+
+    public static String getPostScoreKey() {
+        return PREFIX_POST + SPLIT + "score";
+    }
 }

@@ -30,17 +30,19 @@ public class HomeController implements CommunityConstant {
     private LikeService likeService;
 
     @GetMapping("/index")
-    public String getIndexPage(Page page, Model model) {
+    public String getIndexPage(Page page, Model model,
+                               @RequestParam(name = "orderMode", defaultValue = "0") int orderMode) {
 
         //总数量
         int rows = postService.discussPostsRows(0);
         page.setRows(rows);
-        page.setPath("/index");
+        page.setPath("/index?orderMode=" + orderMode);
 
         //帖子列表+用户数据
         List<Map<String, Object>> discussPosts = new ArrayList();
         //帖子列表
-        List<DiscussPost> postList = postService.discussPosts(0, page.getOffset(), page.getLimit());
+        List<DiscussPost> postList = postService
+                .discussPosts(0, page.getOffset(), page.getLimit(),orderMode);
         for (DiscussPost post : postList) {
             Integer userId = post.getUserId();  //根据userid找发表帖子的用户
             //用户数据
@@ -52,7 +54,7 @@ public class HomeController implements CommunityConstant {
             Map<String, Object> map = new HashMap();
             map.put("post", post);
             map.put("user", user);
-            map.put("likeCount",likeCount);
+            map.put("likeCount", likeCount);
 
             discussPosts.add(map);
         }

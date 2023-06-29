@@ -76,7 +76,7 @@ public class MapperTests {
     public void testSelectAll() {
         System.out.println(discussPostService.selectAll(101));
 
-        System.out.println(discussPostService.discussPosts(null, 0, 3));
+        System.out.println(discussPostService.discussPosts(null, 0, 3,0));
 
         System.out.println(discussPostService.discussPostsRows(0));
     }

@@ -1,2 +1,0 @@
-2023-05-28 17:39:08,601 WARN [http-nio-8080-exec-7] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
-2023-05-28 17:40:54,779 WARN [http-nio-8080-exec-7] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]

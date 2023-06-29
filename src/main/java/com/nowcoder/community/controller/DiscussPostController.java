@@ -5,8 +5,10 @@ import com.nowcoder.community.event.EventProducer;
 import com.nowcoder.community.service.*;
 import com.nowcoder.community.util.CommunityConstant;
 import com.nowcoder.community.util.HostHolder;
+import com.nowcoder.community.util.RedisKeyUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +34,9 @@ public class DiscussPostController implements CommunityConstant {
 
     @Autowired
     private EventProducer eventProducer;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     /**
      * 添加帖子，有手就行
@@ -62,6 +67,10 @@ public class DiscussPostController implements CommunityConstant {
                 .setEntityType(ENTITY_TYPE_POST)
                 .setEntityId(discussPost.getId());
         eventProducer.fireEvent(event);
+
+        //帖子热度变化：新分布
+        String redisKey = RedisKeyUtil.getPostScoreKey();
+        redisTemplate.opsForSet().add(redisKey, discussPost.getId());
 
 
         return new Result(0, null, "插入评论成功");
@@ -199,6 +208,10 @@ public class DiscussPostController implements CommunityConstant {
                 .setEntityType(ENTITY_TYPE_POST)
                 .setEntityId(discussPostId);
         eventProducer.fireEvent(event);
+
+        //帖子热度变化：加精
+        String redisKey = RedisKeyUtil.getPostScoreKey();
+        redisTemplate.opsForSet().add(redisKey, discussPostId);
 
         return new Result(0, null, "已加精");
     }

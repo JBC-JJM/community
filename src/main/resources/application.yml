@@ -38,10 +38,10 @@ spring:
     username: jumpupchen@163.com
     #网易授权码
     password: GMPQHBEGANHCHBNF
-    protocol: smtps	#加密协议
+    protocol: smtps    #加密协议
     properties:
-      mail.smtp.ssl.enable: true	#ssl安全连接
-#reids
+      mail.smtp.ssl.enable: true    #ssl安全连接
+  #reids
   redis:
     host: localhost
     port: 6379
@@ -67,6 +67,31 @@ spring:
     elasticsearch:
       cluster-name: my-application #集群名称？
       cluster-nodes: 127.0.0.1:9300 #节点：使用tcp端口
+  #线程池
+  task:
+    #普通：浏览器自动访问->创建线程
+    execution:
+      pool:
+        core-size: 5 #核心线程数量
+        max-size: 15 #最大线程数
+        queue-capacity: 100 #线程不足时，队列缓存的最大任务数量
+    #定时器：往往固定线程干活
+    scheduling:
+      pool:
+        size: 5 #线程数量
+  # QuartzProperties:任务调度，有默认配置，使用10个线程，但是默认不会持久化到数据库
+  quartz:
+    job-store-type: jdbc #底层存放数据的方式
+    scheduler-name: communityScheduler #调度器名称
+    properties:
+      org.quartz.scheduler.instanceId: AUTO #调度器id自动生成
+      org.quartz.jobStore.class: org.quartz.impl.jdbcjobstore.JobStoreTX #任务存放数据库的类
+      org.quartz.jobStore.driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate #驱动
+      org.quartz.jobStore.isClustered: true #使用集群
+      org.quartz.threadPool.class: org.quartz.simpl.SimpleThreadPool #线程池，默认的
+      org.quartz.threadPool.threadCount: 5 #线程数量，默认10
+
+
 
 
 
