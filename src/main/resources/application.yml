@@ -6,8 +6,16 @@ server:
 #域名
 community:
   path:
+    #域名
     domain: http://localhost:8080
+    #头像上传
     upload: d:/workplace/JavaWeb_Video/Project/community/other_data/upload
+
+# wk
+wk:
+  image:
+    command: D:/user_workplace/wkhtmltopdf/bin/wkhtmltoimage #程序位置
+    storage: D:\workplace\JavaWeb_Video\Project\community\other_data\wk-images #图片位置
 
 spring:
   # ThymeleafProperties模板

@@ -1,3 +1,5 @@
+package com.nowcoder.community;
+
 import com.nowcoder.community.CommunityApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
