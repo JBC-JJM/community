@@ -4,6 +4,7 @@ package com.nowcoder.community.service;
 import com.nowcoder.community.entity.DiscussPost;
 import org.apache.ibatis.annotations.Param;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 public interface DiscussPostService {

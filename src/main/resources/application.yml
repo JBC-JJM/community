@@ -17,6 +17,13 @@ wk:
     command: D:/user_workplace/wkhtmltopdf/bin/wkhtmltoimage #程序位置
     storage: D:\workplace\JavaWeb_Video\Project\community\other_data\wk-images #图片位置
 
+# caffeine
+caffeine:
+  posts:
+    max-size: 15 #缓存的的帖子数量
+    expire-seconds: 180 #缓存有效时间
+
+
 spring:
   # ThymeleafProperties模板
   thymeleaf:

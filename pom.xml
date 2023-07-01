@@ -116,6 +116,13 @@
             <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
 
+<!--        本地缓存-->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
         <!--        驱动-->
         <dependency>
             <groupId>mysql</groupId>
