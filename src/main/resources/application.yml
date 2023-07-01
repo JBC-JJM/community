@@ -15,7 +15,7 @@ community:
 wk:
   image:
     command: D:/user_workplace/wkhtmltopdf/bin/wkhtmltoimage #程序位置
-    storage: D:\workplace\JavaWeb_Video\Project\community\other_data\wk-images #图片位置
+    storage: D:/workplace/JavaWeb_Video/Project/community/other_data/wk-images #图片位置
 
 # caffeine
 caffeine:
@@ -23,6 +23,12 @@ caffeine:
     max-size: 15 #缓存的的帖子数量
     expire-seconds: 180 #缓存有效时间
 
+##actuator,默认启动两个端点：健康状态actuator/health；actuator/info
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: info,caches #除了
 
 spring:
   # ThymeleafProperties模板
@@ -58,9 +64,9 @@ spring:
       mail.smtp.ssl.enable: true    #ssl安全连接
   #reids
   redis:
+    database: 0
     host: localhost
     port: 6379
-    database: 0
     password:
     lettuce:
       pool:
@@ -70,7 +76,6 @@ spring:
         max-wait: 100ms #连接等待时间
   #kafka
   kafka:
-    #
     bootstrap-servers: "localhost:9092"
     #消费者
     consumer:
@@ -80,7 +85,7 @@ spring:
   #ES
   data:
     elasticsearch:
-      cluster-name: my-application #集群名称？
+      cluster-name: nowcoder #集群名称？
       cluster-nodes: 127.0.0.1:9300 #节点：使用tcp端口
   #线程池
   task:
@@ -105,8 +110,6 @@ spring:
       org.quartz.jobStore.isClustered: true #使用集群
       org.quartz.threadPool.class: org.quartz.simpl.SimpleThreadPool #线程池，默认的
       org.quartz.threadPool.threadCount: 5 #线程数量，默认10
-
-
 
 
 

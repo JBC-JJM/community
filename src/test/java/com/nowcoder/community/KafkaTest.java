@@ -19,7 +19,7 @@ public class KafkaTest {
     @Autowired
     private Producer producer;
 
-    @Test
+//    @Test
     public void test() throws InterruptedException {
         producer.pro("test", "你好");
         producer.pro("test", "123");

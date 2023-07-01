@@ -11,11 +11,9 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 public class RedisConfig {
 
     @Bean
-    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory){
-        // 创建RedisTemplate对象
+    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Object> template = new RedisTemplate<>();
-        // 设置连接工厂
-        template.setConnectionFactory(connectionFactory);
+        template.setConnectionFactory(factory);
 
         // 设置key的序列化方式
         template.setKeySerializer(RedisSerializer.string());
@@ -26,7 +24,8 @@ public class RedisConfig {
         // 设置hash的value的序列化方式
         template.setHashValueSerializer(RedisSerializer.json());
 
-        // 返回
+        template.afterPropertiesSet();
         return template;
     }
+
 }
