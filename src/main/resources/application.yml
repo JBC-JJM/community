@@ -58,7 +58,7 @@ spring:
     #账号
     username: jumpupchen@163.com
     #网易授权码
-    password: GMPQHBEGANHCHBNF
+    password: ******
     protocol: smtps    #加密协议
     properties:
       mail.smtp.ssl.enable: true    #ssl安全连接
